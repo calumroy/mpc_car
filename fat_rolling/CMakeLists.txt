@@ -34,6 +34,12 @@ target_include_directories(${PROJECT_NAME}
         $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
 
+include_directories(src/External/blasfeo/lib/include)
+include_directories(src/External/hpipm/lib/include)
+include_directories(src/External/matplotlib)
+include_directories(src/External/Eigen)
+include_directories(src/External/Json/include)
+
 # note that it is not CMAKE_INSTALL_PREFIX we are checking here
 if(DEFINED CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
     message(
@@ -56,7 +62,7 @@ endif()
 
 # without it public headers won't get installed
 set(public_headers
-    include/some.h
+    include/mpc.h
 )
 # note that ${public_headers} has to be in quotes
 set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER "${public_headers}")
