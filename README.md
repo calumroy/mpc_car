@@ -8,6 +8,8 @@ this clones `blasfeo`, `hpipm`, `matplotlip-cpp`, `nlohmann/json`, and `eigen`, 
 
 Once all dependencies are installed `cmake` can be used to build the project
 ```
+cd fat_rolling
 cmake CMakeLists.txt
 make
 ```
+This builds the fat rolling library.
