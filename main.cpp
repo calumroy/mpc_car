@@ -3,6 +3,6 @@
 
 int main(int argc, char *argv[])
 {
-    std::cout << "base application message" << std::endl;
+    std::cout << "mpc car is starting" << std::endl;
     //sm::lbr::printSomething();
 }

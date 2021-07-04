@@ -6,6 +6,8 @@ CMakeCache.txt
 CMakeFiles/
 Makefile
 cmake_install.cmake
-fat_rolling/build/*
-fat_rolling/install/*
-fat_rolling/src/External/*
+*/fat_rolling/build/*
+*/fat_rolling/install/*
+*/fat_rolling/src/External/*
+build/*
+install/*
